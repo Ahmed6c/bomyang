@@ -1,1 +1,22 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_forward" id="11" x="40" y="4">
+    <next>
+      <block type="movement_reverse" id="98">
+        <next>
+          <block type="movement_right" id="108">
+            <next>
+              <block type="variables_set" id="124" inline="true">
+                <field name="VAR">hi</field>
+                <value name="VALUE">
+                  <block type="sensor_light" id="115">
+                    <field name="LIGHT">LEFT</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
