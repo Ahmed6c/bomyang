@@ -1,21 +1,21 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="logic_compare" id="350" inline="true" x="-272" y="96">
+  <block type="logic_compare" id="1" inline="true" x="-272" y="96">
     <field name="OP">EQ</field>
   </block>
-  <block type="controls_repeat" id="280" inline="true" x="-45" y="111">
+  <block type="controls_repeat" id="2" inline="true" x="-45" y="111">
     <value name="TIMES">
-      <block type="math_number" id="300">
+      <block type="math_number" id="3">
         <field name="NUM">2</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="1">
+      <block type="movement_forward" id="4">
         <next>
-          <block type="movement_reverse" id="2">
+          <block type="movement_reverse" id="5">
             <next>
-              <block type="movement_right" id="3">
+              <block type="movement_right" id="6">
                 <next>
-                  <block type="movement_left" id="140"></block>
+                  <block type="movement_left" id="7"></block>
                 </next>
               </block>
             </next>
@@ -24,30 +24,30 @@
       </block>
     </statement>
     <next>
-      <block type="controls_whileUntil" id="332" inline="false">
+      <block type="controls_whileUntil" id="8" inline="false">
         <field name="MODE">UNTIL</field>
         <statement name="DO">
-          <block type="variables_set" id="76" inline="true">
+          <block type="variables_set" id="9" inline="true">
             <field name="VAR">bluebarries</field>
             <value name="VALUE">
-              <block type="sensor_spectrometer" id="109">
+              <block type="sensor_spectrometer" id="10">
                 <field name="LIGHT">BLUE</field>
               </block>
             </value>
             <next>
-              <block type="movement_right" id="101">
+              <block type="movement_right" id="11">
                 <next>
-                  <block type="movement_reverse" id="119">
+                  <block type="movement_reverse" id="12">
                     <next>
-                      <block type="variables_set" id="4" inline="true">
+                      <block type="variables_set" id="13" inline="true">
                         <field name="VAR">hi</field>
                         <value name="VALUE">
-                          <block type="sensor_light" id="5">
+                          <block type="sensor_light" id="14">
                             <field name="LIGHT">LEFT</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_left" id="16"></block>
+                          <block type="movement_left" id="15"></block>
                         </next>
                       </block>
                     </next>
@@ -60,13 +60,13 @@
       </block>
     </next>
   </block>
-  <block type="procedures_defreturn" id="369" inline="false" x="-45" y="440">
+  <block type="procedures_defreturn" id="16" inline="false" x="-45" y="440">
     <mutation></mutation>
     <field name="NAME">amazing boys</field>
     <statement name="STACK">
-      <block type="robot_delay" id="130" inline="true">
+      <block type="robot_delay" id="17" inline="true">
         <value name="DELAY">
-          <block type="sensor_line" id="184">
+          <block type="sensor_line" id="18">
             <field name="LINE">LEFT</field>
           </block>
         </value>
